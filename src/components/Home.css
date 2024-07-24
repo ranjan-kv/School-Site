@@ -1,0 +1,36 @@
+@keyframes type {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  @keyframes colorChange {
+    100% { color: #1A5319; }
+    50% { color: #6cac6d; }
+    0% { color: #508D4E; }
+  }
+  .animated-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid #CCD3CA;
+    animation: type 4s steps(40, end) infinite,
+               colorChange 3s linear infinite;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  }
+  
+ul li {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ul li:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+ul li img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+ul li:hover img {
+  transform: scale(1.1); 
+  opacity: 0.9;
+}

@@ -1,0 +1,26 @@
+.carousel {
+    display: flex;
+    overflow-x: auto;
+  }
+  
+  .carousel-item {
+    flex: none;
+    width: 100%;
+    position: relative;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  
